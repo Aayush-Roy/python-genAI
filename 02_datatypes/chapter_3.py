@@ -1,7 +1,8 @@
-base_flavour_strength = 2
-scale_factor = 3
-powerful_plavour=base_flavour_strength ** scale_factor
-print(powerful_plavour)
+import sys
+ideal_temp = 95.5
+current_temp = 95.77
 
-total_tea_leaves = 1_000_000_000
-print(f"total tea leaves harvested {total_tea_leaves}")
+print(f"ideal temp {ideal_temp}")
+print(f"current temp {current_temp}")
+print(f"Diff {current_temp - ideal_temp}")
+print(sys.float_info)
