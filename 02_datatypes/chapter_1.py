@@ -1,7 +1,7 @@
-def doSomething(name,age):
-    if(age<=18):
-        print(f"{name} you are not eleigible")
-    else:
-        print(f"{name} you are eligible")
-        print("here's your report")
-doSomething("aayush",20)
+data = {
+    "name":"Aayush",
+    "age":21
+}
+data["name"] = "varun"
+del data["name"]
+print(data)
