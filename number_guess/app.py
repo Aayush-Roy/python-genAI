@@ -10,5 +10,6 @@ while True:
             print("Too Low")
         else:
             print("congrats u guess the correct number")
+            break
     except ValueError:
         print("Enter a valid value")    
