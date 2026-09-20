@@ -1,18 +1,30 @@
 import random
 
-guess = ["Rock","Paper","Scissor"]
-computer = random.choice(guess)
+choice_emojis = {
+    'r': '👊',
+    'p': '✋',
+    's': '✂️'
+}
 
 while True:
-    user = input("Choos (r/p/s): ")
-    if user == "Rock" and computer == "Paper":
-        print(f"{user} win to {computer}")
-        break
-    elif user == "Rock" and computer == "Scissor":
-        print(f"{user} win to {computer}")
-        break
-    elif user == "Paper" and computer == "Scissor":
-        print(f"{user} loose to {computer}")
-        break
+    computer_choice = random.choice(("r", "p", "s"))
+
+    user_choice = input("Enter your choice (r/p/s): ")
+
+    if (
+        (user_choice == "r" and computer_choice == "s")
+        or
+        (user_choice == "s" and computer_choice == "p")
+        or
+        (user_choice == "p" and computer_choice == "r")
+    ):
+        print("User won")
+    elif user_choice == computer_choice:
+        print("Draw")
     else:
-        print("Enter a valid option")
+        print("Computer won")
+
+    print(f"User choice: {choice_emojis[user_choice]}")
+    print(f"Computer choice: {choice_emojis[computer_choice]}")
+
+    break
