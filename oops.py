@@ -1,16 +1,10 @@
-class Person:
-    name = "Aayush"
-    occupation = "Developer"
-    age = 22
+class Chai:
+    origin = "India"
+    is_hot = True
 
-    def info(self):
-        print(f"My name is {self.name}, and I'm a {self.occupation}")
+masala = Chai()
+masala.is_hot = False
 
-
-a = Person()
-a.name = "Aman"
-b = Person()
-b.name = "Manisha"
-b.occupation = "Accountant"
-a.info()
-b.info()
+print(f"Chai: {Chai.is_hot}")
+print(masala.origin)
+print(masala.is_hot)
