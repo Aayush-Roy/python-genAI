@@ -1,10 +1,13 @@
-class Chai:
-    origin = "India"
-    is_hot = True
+class ChaiCup:
+    cup = 150
 
-masala = Chai()
-masala.is_hot = False
+    def describe(self):
+        return f'A {self.cup}ml cup chai'
 
-print(f"Chai: {Chai.is_hot}")
-print(masala.origin)
-print(masala.is_hot)
+cup = ChaiCup()
+print(cup.describe())
+print(ChaiCup.describe(cup))
+
+cup_two = ChaiCup()
+cup_two.cup = 100
+print(ChaiCup.describe(cup_two))
