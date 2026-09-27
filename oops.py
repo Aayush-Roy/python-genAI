@@ -1,13 +1,10 @@
-class ChaiCup:
-    cup = 150
+class ChaiOrder:
+    def __init__(self, type_, size):
+        self.type = type_
+        self.size = size
+    def orderSummary(self):
+        return f"{self.size}ml of {self.type}"
 
-    def describe(self):
-        return f'A {self.cup}ml cup chai'
-
-cup = ChaiCup()
-print(cup.describe())
-print(ChaiCup.describe(cup))
-
-cup_two = ChaiCup()
-cup_two.cup = 100
-print(ChaiCup.describe(cup_two))
+order = ChaiOrder("Masala",200)
+print(order.orderSummary())
+        
