@@ -25,6 +25,7 @@ class FancyChaiShop(ChaiShop):
 
 shop = ChaiShop()
 fancy = FancyChaiShop()
+new_shop=Chaishop()
 shop.serve()
 fancy.serve()
 fancy.chai.add_spices()
