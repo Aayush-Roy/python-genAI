@@ -6,3 +6,5 @@
 
 with open("eco.txt","w") as file:
     file.write("Something written")
+with open("eco.txt","w") as file:
+    file.write("Something written")
